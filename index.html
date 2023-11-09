@@ -32,10 +32,10 @@
             </div>
             <div class="link-layout">
                 <div id="list-example" class="list-group groupnav">
-                    <a class="list-group-item list-group-item-action" href="#list-item-1"><i class="fa-brands fa-github"></i>Home</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-2"><i class="fa-brands fa-github"></i>About Me</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-1"><i class="fa-solid fa-house"></i>Home</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-2"><i class="fa-solid fa-circle-info"></i>About Me</a>
                     <a class="list-group-item list-group-item-action" href="#list-item-3"><i class="fa-brands fa-github"></i>Resume</a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-4"><i class="fa-brands fa-github"></i>Projects</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-4"><i class="fa-solid fa-gear"></i>Projects</a>
                   </div>
             </div>
             <div class="footer-side">
@@ -47,44 +47,121 @@
         <div class="rightside">
             <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
                 <div class="header-right-side" id="list-item-1"> <h1><strong>Christian Ikirezi</strong></h1>
-                    <hr style="width:50%;text-align:left;margin-left:0; font-weight: bolder;">
+                    <div class="underlines"></div>
                     <h2>I am a Front-end Deloper</h2>
+                    <button type="button" class="btn btn-primary">Download Cv</button>
                 </div>
 
                 <div class="about-section" id="list-item-2">
                     <div class="header-about">
                        <h1 class="text-primary-emphasis">About</h1>
-                       <hr style="width:50%;text-align:left;margin-left:0; font-weight: bolder;">
+                       <div class="underlines"></div>
                        <p class="">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                    </div>
+                    </hr>
                     <div class="header-body">
                        <div class="left-side-about"><img src="profile.jpeg" alt="" ></div>
                        <div class="right-side-about">
-                          <h3 class="text-primary-emphasis">UI/UX Designer & Web Developer.</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                          <ul class="list-group list-group-flush">
-                          <li class="list-group-item">An item</li>
-                          <li class="list-group-item">A second item</li>
-                          <li class="list-group-item">A third item</li>
-                          <li class="list-group-item">A fourth item</li>
-                          <li class="list-group-item">And a fifth one</li>
-                          </ul>
-                          <p>Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.</p>
+                          <div class="icons-frameworks">
+                            <div class="shape-icons"><i class="fa-brands fa-html5 fa-beat" style="color: #ec3e13;"></i></div>
+                            <div class="shape-icons"><i class="fa-brands fa-css3-alt fa-beat" style="color: #ddd603;"></i></div>
+                           <div class="shape-icons"><i class="fa-brands fa-react fa-beat" style="color: #005eff;"></i></div> 
+                            <div class="shape-icons"><i class="fa-brands fa-node-js fa-beat" style="color: #138a0a;"></i></div>
+                          </div>
+                          <div class="info-items">
+                            <div class="top-underline"></div>
+                            <ul>
+                                <li class="">Item1: info </li>
+                                <li class="">Item1: info </li>
+                                <li class="">Item1: info </li>
+                                <li class="">Item1: info </li>
+                                <li class="">Item1: info </li>
+                                <li class="">Item1: info </li>
+                                <li class="">Item1: info </li>
+                                <li class="">Item1: info </li>
+                                <li class="">Item1: info </li>
+                            </ul>
+                          </div>
+                         
+                          <p>Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.</p>
                        </div>
                     </div>
                     <div class="footer-about">
-                       <div class="header-about">
-                          <h1 class="text-primary-emphasis">About</h1>
-                          <hr style="width:50%;text-align:left;margin-left:0">
-                          <p class="">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                       </div>
-                       <div class="facts-images">
-                       </div> 
+                      
                     </div>
                 </div>
-            </div>  
+            </div> 
+            <div class="projects" id="list-item-3">
+                
+                <div class="card-container">
+                    <h1 class="text-primary-emphasis">Projects</h1>
+                <div class="underlines"></div>
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                          <div class="card cardhover" onmouseover="makevisible()" onmouseout="makeinvisible()" id ="carhover">
+                            <img src="commerce.jpg" class="card-img-top" alt="...">
+                            <div class="card-body cardbody">
+                              <h5 class="card-title">Ecommere Website</h5>
+                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="icons-frameworks" id="iconsframeworks">
+                                <button type="button" class="btn btn-primary">Project Details</button>
+                                <div class="shape-icons"><i class="fa-regular fa-eye " style="color: #ffffff;"></i></div>
+                               <div class="shape-icons"><i class="fa-solid fa-code " style="color: #ffffff;"></i></div> 
+                                <div class="shape-icons"><i class="fa-brands fa-github" style="color: #ffffff;"></i></div>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card" >
+                            <img src="social.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Social media App</h5>
+                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="icons-frameworks">
+                                <div class="shape-icons"><i class="fa-solid fa-share fa-beat" style="color: #ffffff;"></i></div>
+                                <div class="shape-icons"><i class="fa-regular fa-eye fa-beat" style="color: #ffffff;"></i></div>
+                               <div class="shape-icons"><i class="fa-solid fa-code fa-beat" style="color: #ffffff;"></i></div> 
+                                <div class="shape-icons"><i class="fa-brands fa-github fa-beat" style="color: #ffffff;"></i></div>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card">
+                            <img src="bank.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Simple Banking system</h5>
+                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                            <div class="icons-frameworks">
+                                <div class="shape-icons"><i class="fa-solid fa-share fa-beat" style="color: #ffffff;"></i></div>
+                                <div class="shape-icons"><i class="fa-regular fa-eye fa-beat" style="color: #ffffff;"></i></div>
+                               <div class="shape-icons"><i class="fa-solid fa-code fa-beat" style="color: #ffffff;"></i></div> 
+                                <div class="shape-icons"><i class="fa-brands fa-github fa-beat" style="color: #ffffff;"></i></div>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card">
+                            <img src="face.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Face recognition</h5>
+                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="icons-frameworks">
+                                <div class="shape-icons"><i class="fa-solid fa-share fa-beat" style="color: #ffffff;"></i></div>
+                                <div class="shape-icons"><i class="fa-regular fa-eye fa-beat" style="color: #ffffff;"></i></div>
+                               <div class="shape-icons"><i class="fa-solid fa-code fa-beat" style="color: #ffffff;"></i></div> 
+                                <div class="shape-icons"><i class="fa-brands fa-github fa-beat" style="color: #ffffff;"></i></div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div> 
         </div>
     </div>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
